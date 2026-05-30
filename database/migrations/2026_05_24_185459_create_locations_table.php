@@ -13,6 +13,7 @@ return new class extends Migration
 {
     Schema::create('locations', function (Blueprint $table) {
         $table->id();
+        $table->string('section');
         $table->string('cabinet_number'); // رقم الخزانة
         $table->string('shelf')->nullable(); // الرف (اختياري)
         $table->timestamps();

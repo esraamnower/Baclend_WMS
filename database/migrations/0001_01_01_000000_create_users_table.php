@@ -18,7 +18,7 @@ return new class extends Migration
         $table->timestamp('email_verified_at')->nullable();
         $table->string('password');
         // السطر الجديد لتحديد الصلاحيات
-        $table->enum('role', ['super_admin', 'admin', 'trainer'])->default('trainer');
+        //$table->enum('role', ['super_admin', 'admin', 'trainer'])->default('trainer');
         $table->rememberToken();
         $table->timestamps();
     });
